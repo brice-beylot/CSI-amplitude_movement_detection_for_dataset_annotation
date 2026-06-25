@@ -1,0 +1,9 @@
+# Core dependencies (required for the package to work)
+pandas>=3.0.3
+numpy>=2.4.6
+scipy>=1.15.3
+csi-preprocessing
+matplotlib>=3.10.6
+
+# Development dependencies (optional, for testing/debugging)
+jupyter>=1.0.0

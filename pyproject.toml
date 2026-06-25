@@ -1,0 +1,35 @@
+[build-system]
+# Required for building the package. Specifies the build backend and its dependencies.
+requires = ["setuptools>=42", "wheel"]  # setuptools is the most common backend
+build-backend = "setuptools.build_meta"  # Standard backend for setuptools
+
+[project]
+# Core metadata for your package
+name = "movement_detection"          # Name of your package (use hyphens, not underscores)
+version = "0.0.1"                    # Initial version (follow semantic versioning: MAJOR.MINOR.PATCH)
+description = "Wi-Fi CSI-based motion detection for the automatic annotation of motion windows in datasets."
+readme = "README.md"                 # Path to your README file
+authors = [{name = "Brice Beylot"}]
+requires-python = ">=3.8"            # Minimum Python version
+dependencies = [
+    "pandas>=3.0.3",                 # Core dependencies
+    "numpy>=2.4.6",
+    "scipy>=1.15.3",
+    "csi-preprocessing",      # Your custom dependency
+    "matplotlib>=3.10.6",             # For plotting functions
+]
+
+[project.optional-dependencies]
+# Optional dependencies (e.g., for development or testing)
+dev = [
+    "jupyter>=1.0.0",                # For notebooks
+]
+
+[project.scripts]
+# Entry points for console scripts (if your package provides CLI tools)
+# Example: If you want to run `movement-detection` from the command line
+# movement-detection = "movement_detection.cli:main"
+
+[tool.setuptools.packages.find]
+# Tells setuptools where to find your packages (default: look in `src/`)
+where = ["src"]
