@@ -199,3 +199,26 @@ movement_detection/
 │       └── movement_detection.py  # Main module
 └── data/                  # Example datasets (not committed to Git)
 ```
+## **Tested results**
+The following results were obtained using certain fixed parameters, as set out below : 
+ - remove_null = True
+ - apply_gain = True
+ - denoise = True
+ - standardize = False,
+ - denoise_method: str = "hampel_filter",
+ - low_freq: float = 0.5,
+ - high_freq: float = 10.0,
+ - window_calibration_size: int = 300,
+ - window_detection_size: int = 300,
+ - mvs_window_size: int = 100,
+ - step_calibration: int = 25,
+ - step_detection: int = 10,
+ - percentile_calibration: int = 5,
+
+| dataset | bandpass | gain_locked | all_subcarriers | apply_noise_gate_band | method | calibration | weighted | factor | percentile_detection | sigma | difference in packets | samples without movement detected |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |

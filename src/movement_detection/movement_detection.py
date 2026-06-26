@@ -848,7 +848,7 @@ def mean_time_differences(df, gain_locked=True, all_subcarriers=True, apply_nois
     
     Args:
         df (pd.DataFrame): Input DataFrame containing 'CSI_processed', 'event_start', and 'event_end'.
-        gain_locked (bool, optional): Used to choose hpw to calculate turbulence (std of subcarriers amplitude for each packet if True, std/mean of subcarriers amplitude for each packet if False). Defaults to True.
+        gain_locked (bool, optional): Used to choose how to calculate turbulence (std of subcarriers amplitude for each packet if True, std/mean of subcarriers amplitude for each packet if False). Defaults to True.
         all_subcarriers (bool, optional): If True, skips band optimization and uses all subcarriers. Defaults to True.
         apply_noise_gate_band (bool, optional): Whether to use noise gating during band generation. Defaults to False.
         window_calibration_size (int, optional): Window size for calibration. Defaults to 300.
