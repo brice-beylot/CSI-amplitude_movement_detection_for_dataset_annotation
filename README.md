@@ -216,9 +216,9 @@ The following results were obtained using certain fixed parameters, as set out b
  - percentile_calibration: int = 5,
 
 | dataset | bandpass | gain_locked | all_subcarriers | apply_noise_gate_band | method | calibration | weighted | factor | percentile_detection | sigma | difference in packets | samples without movement detected |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 46.48 | 17 | 40.06 | 18 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 40.06 | 18 |
+| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 40.06 | 18 |
