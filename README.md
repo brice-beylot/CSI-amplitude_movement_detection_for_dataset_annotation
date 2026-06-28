@@ -369,13 +369,13 @@ Note: The best configurations are shown below this table, based on the tested re
 
 
 ### **Best configurations**
-The use of the passband filter always give a more precise annotation and enable the detection algorithm to be more robust to false positive because we can increase the value of the threshold of detection without loosing too much movement.
-The use of gain_locked=True (using only std in the turbulence calculation) also increase both precision and robustness compared to gain_locked=False (using std/mean in the turbulence calculation).
-The use of all subcarriers also increase a little bit precision and robustness but increase the calculation time of the algorithm compared to the use of the selected best band thanks to the NBVI metrics.
-The apply_noise_gate_band doesn't seem to have an signicative impact on the even the precision or the robustness regarding the movement detection and annotation.
-Regarding the calculation method to use, the "amplitude" (calcul of mean of variance of amplitude for each subcarrier) method seems to be generally more precise than the "turbulence" (calcul of variance of standard deviation of amplitude for each packet) method.
+The use of the passband filter always gives a more precise annotation and enables the detection algorithm to be more robust to false positive rate because we can increase the value of the threshold of detection without loosing too much movement.
+The use of gain_locked=True (using only std in the turbulence calculation) also increases both precision and robustness compared to gain_locked=False (using std/mean in the turbulence calculation).
+The use of all subcarriers also increases a little bit precision and robustness but increases the calculation time of the algorithm compared to the use of the selected best band thanks to the NBVI metrics.
+The apply_noise_gate_band doesn't seem to have a significant impact either on the precision or on the robustness regarding the movement detection and annotation.
+Regarding the calculation method to use, the "amplitude" method (calculation of mean of variance of amplitude for each subcarrier) seems to be generally more precise than the "turbulence" method (calculation of variance of standard deviation of amplitude for each packet).
 
-Here are the four best configurations, based on the previous tests, rather than you want to use all subcarriers and the calibration method or not :
+Here are the four best configurations, based on the previous tests, either you want to use all subcarriers and the calibration method or not :
 Note : The calibration method is only usefull for real time detection or for already annotated datasets.
 | bandpass | gain_locked | all_subcarriers | apply_noise_gate_band | method | calibration | weighted | factor | percentile_detection | sigma | difference in packets | samples without movement detected |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
