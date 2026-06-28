@@ -213,92 +213,173 @@ The following results were obtained using certain fixed parameters, as set out b
  - mvs_window_size: int = 100,
  - step_calibration: int = 25,
  - step_detection: int = 10,
- - percentile_calibration: int = 5,
+ - percentile_calibration: int = 5
+
+Note: The best configurations are shown below this table, based on the tested results
 
 | dataset | bandpass | gain_locked | all_subcarriers | apply_noise_gate_band | method | calibration | weighted | factor | percentile_detection | sigma | difference in packets | samples without movement detected |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 40.06 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 10 | 39.02 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 15 | 38.87 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 20 | 38.72 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.05 | _ | 25 | 38.72 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | True | 1.1 | _ | 20 | 36.43 | 26 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 10 | 20 | 54.41 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 60 | 20 | 32.17 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 70 | 20 | 31.34 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 80 | 20 | 29.95 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 90 | 20 | 29.63 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 100 | 20 | 30.10 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 90 | 15 | 29.24 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | True | _ | 90 | 10 | 33.31 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | True | True | 1.05 | _ | 10 | 36.70 | 17 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | True | True | 1.05 | _ | 15 | 35.22 | 17 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | True | True | 1.05 | _ | 20 | 34.58 | 17 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | True | True | 1.05 | _ | 25 | 34.20 | 17 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | True | True | 1.1 | _ | 25 | 35.71 | 20 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 10 | 25 | 51.81 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 50 | 25 | 32.61 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 60 | 25 | 30.29 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 70 | 25 | 27.94 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 80 | 25 | 27.23 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 90 | 25 | 27.10 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 100 | 25 | 28.22 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 70 | 20 | 28.84 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 70 | 30 | 27.56 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | True | _ | 70 | 35 | 27.66 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | True | False | 1.05 | _ | _ | 61.69 | 18 |
-| 26_05_21.pkl_annotated | False | True | False | True | turbulence | False | False | _ | 90 | _ | 62.36 | 0 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | True | False | 1.05 | _ | _ | 62.12 | 17 |
-| 26_05_21.pkl_annotated | False | True | False | True | amplitude | False | False | _ | 70 | _ | 58.32 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 1.05 | _ | 20 | 28.44 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 1.2 | _ | 20 | 28.5 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 1.3 | _ | 20 | 28.66 | 1 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 1.9 | _ | 20 | 32.03 | 1 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 2.0 | _ | 20 | 29.62 | 2 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 2.5 | _ | 20 | 32.56 | 2 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 3.0 | _ | 20 | 30.49 | 5 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 1.9 | _ | 15 | 33.07 | 1 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 1.9 | _ | 25 | 31.46 | 1 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | True | True | 1.9 | _ | 30 | 31.27 | 1 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | False | True | _ | 90 | 15 | 27.06 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | False | True | _ | 80 | 15 | 27.56 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | False | True | _ | 100 | 15 | 25.56 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | False | True | _ | 100 | 20 | 25.06 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | turbulence | False | True | _ | 100 | 25 | 26.08 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | True | True | 1.05 | _ | 25 | 21.57 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 21.75 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | True | True | 1.1 | _ | 20 | 21.81 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | True | True | 1.1 | _ | 30 | 21.68 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | True | True | 1.2 | _ | 25 | 21.08 | 2 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | True | True | 1.4 | _ | 25 | 21.32 | 2 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | True | True | 1.5 | _ | 25 | 20.90 | 4 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | False | True | _ | 70 | 25 | 20.96 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | False | True | _ | 80 | 25 | 19.41 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | False | True | _ | 90 | 25 | 18.80 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | False | True | _ | 100 | 25 | 18.75 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | False | True | _ | 90 | 30 | 18.67 | 0 |
-| 26_05_21.pkl_annotated | True | True | False | False | amplitude | False | True | _ | 90 | 35 | 18.82 | 0 |
-| 26_05_21.pkl_annotated | True | False | False | False | turbulence | True | True | 1.1 | _ | 25 | 125.52 | 112 |
-| 26_05_21.pkl_annotated | True | False | False | False | turbulence | False | True | _ | 100 | 20 | 214.60 | 0 |
-| 26_05_21.pkl_annotated | False | False | False | False | turbulence | True | True | 1.1 | _ | 25 | 36.52 | 25 |
-| 26_05_21.pkl_annotated | False | False | False | False | turbulence | False | True | _ | 100 | 20 | 38.91 | 0 |
-| 26_05_21.pkl_annotated | lowpass filter | True | False | False | turbulence | True | True | 1.1 | _ | 25 | 42.08 | 21 |
-| 26_05_21.pkl_annotated | lowpass filter | True | False | False | turbulence | False | True | _ | 100 | 20 | 29.81 | 0 |
-| 26_05_21.pkl_annotated | lowpass filter | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 36.97 | 22 |
-| 26_05_21.pkl_annotated | lowpass filter | True | False | False | amplitude | False | True | _ | 100 | 20 | 30.47 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | True | True | 1.1 | _ | 25 | 25.75 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | True | True | 2.9 | _ | 25 | 27.52 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | True | True | 3.0 | _ | 25 | 27.31 | 1 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | True | True | 2.9 | _ | 40 | 26.95 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | False | True | _ | 100 | 20 | 25.33 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | False | True | _ | 90 | 20 | 25.46 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | False | True | _ | 100 | 25 | 24.31 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | False | True | _ | 100 | 30 | 23.76 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | turbulence | False | True | _ | 100 | 35 | 23.56 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | amplitude | True | True | 1.1 | _ | 25 | 20.03 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | amplitude | True | True | 1.2 | _ | 25 | 19.90 | 1 |
-| 26_05_21.pkl_annotated | True | True | True | False | amplitude | True | True | 1.3 | _ | 25 | 20.12 | 2 |
-| 26_05_21.pkl_annotated | True | True | True | False | amplitude | False | True | _ | 100 | 20 | 17.20 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | amplitude | False | True | _ | 90 | 20 | 17.46 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | amplitude | False | True | _ | 100 | 25 | 16.66 | 0 |
-| 26_05_21.pkl_annotated | True | True | True | False | amplitude | False | True | _ | 100 | 30 | 17.09 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | True | True | 1.05 | _ | 8 | 40.06 | 18 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | True | True | 1.05 | _ | 10 | 39.02 | 18 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | True | True | 1.05 | _ | 15 | 38.87 | 18 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | True | True | 1.05 | _ | 20 | 38.72 | 18 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | True | True | 1.05 | _ | 25 | 38.72 | 18 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | True | True | 1.1 | _ | 20 | 36.43 | 26 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 10 | 20 | 54.41 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 60 | 20 | 32.17 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 70 | 20 | 31.34 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 80 | 20 | 29.95 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 90 | 20 | 29.63 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 100 | 20 | 30.10 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 90 | 15 | 29.24 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | True | _ | 90 | 10 | 33.31 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | True | True | 1.05 | _ | 10 | 36.70 | 17 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | True | True | 1.05 | _ | 15 | 35.22 | 17 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | True | True | 1.05 | _ | 20 | 34.58 | 17 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | True | True | 1.05 | _ | 25 | 34.20 | 17 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | True | True | 1.1 | _ | 25 | 35.71 | 20 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 10 | 25 | 51.81 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 50 | 25 | 32.61 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 60 | 25 | 30.29 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 70 | 25 | 27.94 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 80 | 25 | 27.23 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 90 | 25 | 27.10 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 100 | 25 | 28.22 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 70 | 20 | 28.84 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 70 | 30 | 27.56 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | True | _ | 70 | 35 | 27.66 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | True | False | 1.05 | _ | _ | 61.69 | 18 |
+| 26_05_21.pkl_annotated          | False | True | False | True | turbulence | False | False | _ | 90 | _ | 62.36 | 0 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | True | False | 1.05 | _ | _ | 62.12 | 17 |
+| 26_05_21.pkl_annotated          | False | True | False | True | amplitude | False | False | _ | 70 | _ | 58.32 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 1.05 | _ | 20 | 28.44 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 1.2 | _ | 20 | 28.5 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 1.3 | _ | 20 | 28.66 | 1 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 1.9 | _ | 20 | 32.03 | 1 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 2.0 | _ | 20 | 29.62 | 2 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 2.5 | _ | 20 | 32.56 | 2 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 3.0 | _ | 20 | 30.49 | 5 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 1.9 | _ | 15 | 33.07 | 1 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 1.9 | _ | 25 | 31.46 | 1 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | True | True | 1.9 | _ | 30 | 31.27 | 1 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | False | True | _ | 90 | 15 | 27.06 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | False | True | _ | 80 | 15 | 27.56 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | False | True | _ | 100 | 15 | 25.56 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | False | True | _ | 100 | 20 | 25.06 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | turbulence | False | True | _ | 100 | 25 | 26.08 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.05 | _ | 25 | 21.57 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 21.75 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.1 | _ | 20 | 21.81 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.1 | _ | 30 | 21.68 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.2 | _ | 25 | 21.08 | 2 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.4 | _ | 25 | 21.32 | 2 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.5 | _ | 25 | 20.90 | 4 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | False | True | _ | 70 | 25 | 20.96 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | False | True | _ | 80 | 25 | 19.41 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | False | True | _ | 90 | 25 | 18.80 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | False | True | _ | 100 | 25 | 18.75 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | False | True | _ | 90 | 30 | 18.67 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | False | True | _ | 90 | 35 | 18.82 | 0 |
+| 26_05_21.pkl_annotated          | True | False | False | False | turbulence | True | True | 1.1 | _ | 25 | 125.52 | 112 |
+| 26_05_21.pkl_annotated          | True | False | False | False | turbulence | False | True | _ | 100 | 20 | 214.60 | 0 |
+| 26_05_21.pkl_annotated          | False | False | False | False | turbulence | True | True | 1.1 | _ | 25 | 36.52 | 25 |
+| 26_05_21.pkl_annotated          | False | False | False | False | turbulence | False | True | _ | 100 | 20 | 38.91 | 0 |
+| 26_05_21.pkl_annotated          | lowpass filter | True | False | False | turbulence | True | True | 1.1 | _ | 25 | 42.08 | 21 |
+| 26_05_21.pkl_annotated          | lowpass filter | True | False | False | turbulence | False | True | _ | 100 | 20 | 29.81 | 0 |
+| 26_05_21.pkl_annotated          | lowpass filter | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 36.97 | 22 |
+| 26_05_21.pkl_annotated          | lowpass filter | True | False | False | amplitude | False | True | _ | 100 | 20 | 30.47 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | True | True | 1.1 | _ | 25 | 25.75 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | True | True | 2.9 | _ | 25 | 27.52 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | True | True | 3.0 | _ | 25 | 27.31 | 1 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | True | True | 2.9 | _ | 40 | 26.95 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | False | True | _ | 100 | 20 | 25.33 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | False | True | _ | 90 | 20 | 25.46 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | False | True | _ | 100 | 25 | 24.31 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | False | True | _ | 100 | 30 | 23.76 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | turbulence | False | True | _ | 100 | 35 | 23.56 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | True | True | 1.1 | _ | 25 | 20.03 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | True | True | 1.2 | _ | 25 | 19.90 | 1 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | True | True | 1.3 | _ | 25 | 20.12 | 2 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | False | True | _ | 100 | 20 | 17.20 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | False | True | _ | 90 | 20 | 17.46 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | False | True | _ | 100 | 25 | 16.66 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | False | True | _ | 100 | 30 | 17.09 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | True | True | 1.1 | _ | 25 | 43.63 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | True | True | 1.3 | _ | 25 | 61.86 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | True | True | 1.4 | _ | 25 | 55.56 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | True | True | 1.8 | _ | 25 | 57.66 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | True | True | 1.9 | _ | 25 | 57.87 | 4 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | True | True | 1.8 | _ | 30 | 57.93 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | True | True | 1.8 | _ | 20 | 57.64 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | False | True | _ | 100 | 30 | 92.21 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | False | True | _ | 70 | 30 | 68.97 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | False | True | _ | 60 | 30 | 61.65 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | False | True | _ | 50 | 30 | 62.15 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | False | True | _ | 60 | 25 | 59.92 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | False | True | _ | 60 | 20 | 58.26 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | turbulence | False | True | _ | 60 | 15 | 60.65 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 27.25 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | True | True | 1.2 | _ | 25 | 21.66 | 4 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 100 | 25 | 48.44 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 90 | 25 | 41.92 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 80 | 25 | 35.78 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 70 | 25 | 29.18 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 60 | 25 | 25.05 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 50 | 25 | 23.97 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 40 | 25 | 23.36 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 30 | 25 | 23.57 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 40 | 20 | 23.36 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | False | False | amplitude | False | True | _ | 40 | 30 | 23.50 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 1.1 | _ | 25 | 41.63 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 1.7 | _ | 25 | 40.84 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 1.8 | _ | 25 | 40.74 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 2.0 | _ | 25 | 41.46 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 2.2 | _ | 25 | 41.28 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 2.3 | _ | 25 | 43.33 | 2 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 2.5 | _ | 25 | 42.53 | 5 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 2.0 | _ | 20 | 41.33 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | True | True | 2.0 | _ | 15 | 42.48 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | False | True | _ | 60 | 20 | 33.60 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | False | True | _ | 70 | 20 | 34.13 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | False | True | _ | 50 | 20 | 34.31 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | False | True | _ | 60 | 15 | 34.34 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | turbulence | False | True | _ | 60 | 25 | 34.0 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | True | True | 1.1 | _ | 25 | 24.15 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | True | True | 1.2 | _ | 25 | 19.42 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | True | True | 1.3 | _ | 25 | 19.82 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | True | True | 1.4 | _ | 25 | 17.77 | 6 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | True | True | 1.2 | _ | 20 | 19.29 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | True | True | 1.2 | _ | 15 | 19.48 | 1 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 40 | 25 | 20.65 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 50 | 25 | 21.18 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 30 | 25 | 20.42 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 20 | 25 | 21.07 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 30 | 20 | 20.28 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 30 | 15 | 20.28 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 30 | 10 | 20.28 | 0 |
+| data_sb207_28_05_2026_annotated | True | True | True | False | amplitude | False | True | _ | 30 | 5 | 20.42 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | True | True | 1.2 | _ | 20 | 19.73 | 1 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 21.75 | 0 |
+| 26_05_21.pkl_annotated          | True | True | True | False | amplitude | False | True | _ | 30 | 20 | 20.14 | 0 |
+| 26_05_21.pkl_annotated          | True | True | False | False | amplitude | False | True | _ | 40 | 20 | 24.13 | 0 |
+| dataframe_evening.pkl_annotated | True | True | True | False | amplitude | True | True | 1.2 | _ | 20 | 24.52 | 0 |
+| dataframe_evening.pkl_annotated | True | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 24.65 | 0 |
+| dataframe_evening.pkl_annotated | True | True | True | False | amplitude | False | True | _ | 30 | 20 | 23.70 | 0 |
+| dataframe_evening.pkl_annotated | True | True | False | False | amplitude | False | True | _ | 40 | 20 | 26.97 | 0 |
+
+
+### **Best configurations**
+The use of the passband filter always give a more precise annotation and enable the detection algorithm to be more robust to false positive because we can increase the value of the threshold of detection without loosing too much movement.
+The use of gain_locked=True (using only std in the turbulence calculation) also increase both precision and robustness compared to gain_locked=False (using std/mean in the turbulence calculation).
+The use of all subcarriers also increase a little bit precision and robustness but increase the calculation time of the algorithm compared to the use of the selected best band thanks to the NBVI metrics.
+The apply_noise_gate_band doesn't seem to have an signicative impact on the even the precision or the robustness regarding the movement detection and annotation.
+Regarding the calculation method to use, the "amplitude" (calcul of mean of variance of amplitude for each subcarrier) method seems to be generally more precise than the "turbulence" (calcul of variance of standard deviation of amplitude for each packet) method.
+
+Here are the four best configurations, based on the previous tests, rather than you want to use all subcarriers and the calibration method or not :
+Note : The calibration method is only usefull for real time detection or for already annotated datasets.
+| bandpass | gain_locked | all_subcarriers | apply_noise_gate_band | method | calibration | weighted | factor | percentile_detection | sigma | difference in packets | samples without movement detected |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| True | True | True | False | amplitude | True | True | 1.2 | _ | 20 | 19.29 | 1 |
+| True | True | False | False | amplitude | True | True | 1.1 | _ | 25 | 27.25 | 1 |
+| True | True | True | False | amplitude | False | True | _ | 30 | 20 | 20.28 | 0 |
+| True | True | False | False | amplitude | False | True | _ | 40 | 20 | 23.36 | 0 |
